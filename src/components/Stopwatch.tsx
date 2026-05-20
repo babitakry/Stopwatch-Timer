@@ -10,7 +10,9 @@ function Stopwatch() {
         setStartTime(Date.now() - elapsedTime)
         setNow(Date.now());
 
-        clearInterval(intervalRef.current);
+        if (intervalRef.current !== null) {
+            clearInterval(intervalRef.current);
+        }
         intervalRef.current = setInterval(() => {
             setNow(Date.now());
         }, 10)
@@ -20,13 +22,17 @@ function Stopwatch() {
         if (startTime != null && now != null) {
             setElapsedTime(now - startTime);
         }
-        clearInterval(intervalRef.current);
+        if (intervalRef.current !== null) {
+            clearInterval(intervalRef.current);
+        }
         setStartTime(null);
         setNow(null);
     }
 
     const handleResetButton = () => {
-        clearInterval(intervalRef.current)
+        if (intervalRef.current !== null) {
+            clearInterval(intervalRef.current);
+        }
         setStartTime(null)
         setNow(null)
         setElapsedTime(0);

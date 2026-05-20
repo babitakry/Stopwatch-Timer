@@ -4,25 +4,25 @@ A lightweight, responsive, and highly interactive timekeeping web application bu
 
 ---
 
-## 🚀 Live Demo & Repository
-- **Repository Link:** [GitHub Repository](https://github.com/your-username/stopwatch-timer-app) *(Replace with your actual URL)*
+## Live Demo & Repository
+- **Repository Link:** [GitHub Repository](https://github.com/babitakry/Stopwatch-Timer)
 - **Deployed Link:** [Vercel / Netlify Deploy](https://stopwatch-timer-app.vercel.app) *(Replace with your actual URL)*
 
 ---
 
-## ✨ Features
+## Features
 
-### ⏱️ Stopwatch
+### Stopwatch
 - **High Precision:** Displays hours, minutes, seconds, and centiseconds (tenths of a second) at a smooth 10ms render rate.
 - **Drift-Free Architecture:** Leverages system delta-time (`Date.now() - elapsedTime`) rather than relying on sequential state increments, preventing interval lags or browser timer drift.
 - **Controls:** Intuitive Start, Pause, and Reset workflows.
 
-### ⏳ Countdown Timer
+### Countdown Timer
 - **Custom Input:** User-defined duration via interactive Hours, Minutes, and Seconds inputs.
 - **Auto-Validation:** Enforces numeric-only inputs and caps minutes/seconds values to `59` automatically.
 - **State Preservation:** Keeps countdown time in a separate variable, allowing you to pause, resume, and reset smoothly while maintaining input configurations.
 
-### 🎨 Visuals & UX
+### Visuals & UX
 - **Apple-Inspired Design:** Minimalist layout built around dark accents, clean shadows, and custom neutral backgrounds.
 - **Tabular Numerics:** Standardized monospaced digits (`tabular-nums`) to prevent horizontal jittering of layout text during countdowns.
 - **Micro-Interactions:** 
@@ -33,7 +33,7 @@ A lightweight, responsive, and highly interactive timekeeping web application bu
 
 ---
 
-## 🛠️ Architecture & Components
+## Architecture & Components
 
 The application structure is fully modularized and strongly typed:
 
@@ -52,12 +52,12 @@ src/
 
 ---
 
-## 💻 Local Installation & Setup
+## Local Installation & Setup
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/stopwatch-timer-app.git
-   cd stopwatch-timer-app
+   git clone https://github.com/babitakry/Stopwatch-Timer.git
+   cd Stopwatch-Timer
    ```
 
 2. **Install Dependencies:**
@@ -75,5 +75,4 @@ src/
    ```bash
    npm run build
    ```
-   This creates a optimized production bundle inside the `/dist` directory.
-# Stopwatch-Timer
+   This creates an optimized production bundle inside the `/dist` directory.
